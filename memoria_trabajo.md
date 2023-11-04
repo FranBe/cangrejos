@@ -15,6 +15,7 @@ Columnas:
 |Sex|Length|Diameter|Height|Weight|Shucked Weight|Viscera Weight|Shell Weight|Age|
 |---|---|---|---|---|---|---|---|---|
 |F|1,4375|1,175|0,4125|24,6357155|12,3320325|5,5848515|6,747181|9|
+
 La idea es, más que realizar una regresión lineal para predecir la variable objetivo, es poder intentar explicar con las variables tomadas como predictoras, la edad de los crustáceos. 
 
 
@@ -79,17 +80,14 @@ En el estudio anterior también se plantea la separación en grupos por rango et
 
 ## Modelo regresión
 
-La aplicación del modelo de regresión lineal (múltiple en este caso), no arroja un valor realmente satisfactorio. Varios de los atributos que serían predictores, tienen una alta correlación, y esto sería contraproducente al efectuar dicho modelo. Finalmente, las variables que pueden explicar la edad del cangrejo, son pocas, y no aportan demasiado al modelo, para minimizar el error.
-Se considera la aplicación entonces de otro modelo de regresión, para evitar el problemas de la multicolinealidad que tiene la regresión lineal, pero de todas maneras la alta correlación entre "weight" y varias de las demás variables, se interpreta como un problema que puede llevar a un overfitting.
-Quizás el uso de otro modelo más complejo, como regresión con KNN o RandomForest se justifique si hubiera más columnas que aporten valor
+La aplicación del modelo de regresión lineal (múltiple en este caso), no arroja un valor realmente satisfactorio. Varios de los atributos que serían predictores, tienen una alta correlación, y esto sería contraproducente al efectuar dicho modelo. Finalmente, las variables que pueden explicar la edad del cangrejo, son pocas, y no aportan demasiado al modelo para minimizar el error.
+Se considera la aplicación entonces, de otro modelo de regresión, para evitar el problema de la multicolinealidad que se tiene coon la regresión lineal, pero de todas maneras la alta correlación entre "weight" y varias de las demás variables, se interpreta como un problema que puede llevar a un overfitting.
+Quizás el uso de otro modelo más complejo, como regresión con KNN o RandomForest se justifique si hubiera más columnas que aporten valor.
 
 
 
 ## Modelo de clasificación
 
-- explicar porque es necesaria una clasificación
-- explicar las clases que se toman para el modelo
-- comentar el problema de no saber la especie:
 
 Analizando el set de datos, se investiga la procedencia del mismo.
 
