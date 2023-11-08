@@ -1,5 +1,9 @@
 
 
+# Presentación e idea general del proyecto. 
+
+Mencionar sobre el "cultivo de cangrejos" y su consumo en el mundo, especies más consumidas. Especie a analizar, datos generales, años para la cosecha.
+
 ## Dataset
 
 CrabAgePrediction.csv de Kaggle.
@@ -17,6 +21,10 @@ Columnas:
 |F|1,4375|1,175|0,4125|24,6357155|12,3320325|5,5848515|6,747181|9|
 
 La idea es, más que realizar una regresión lineal para predecir la variable objetivo, es poder intentar explicar con las variables tomadas como predictoras, la edad de los crustáceos. 
+
+### Observaciones a Agregar
+Escribir sobre la imposibilidad de usar las variables de animales muertos ya que la predcción debe ser sobre animales vivos. Mencionar el cambio de unidades de medida del sistema imperial al métrico
+
 
 
 ## Hipótesis
